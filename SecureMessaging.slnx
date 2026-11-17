@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SecureMessaging.Api/SecureMessaging.Api.csproj" />
+  <Project Path="SecureMessaging.Client/SecureMessaging.Client.csproj" />
+  <Project Path="SecureMessaging.Core/SecureMessaging.Core.csproj" />
+  <Project Path="SecureMessaging.Tests/SecureMessaging.Tests.csproj" />
+</Solution>
