@@ -52,4 +52,22 @@ public class RsaServiceTests
         // Assert
         Assert.Equal(plainText, decryptedText);
     }
+
+        [Fact]
+    public void Test_ForGitActions()
+    {
+        // Arrange
+        var keys = _rsaService.GenerateCryptoKeys();
+        string plainText = "Bye, World!";
+
+        string cipherText = _rsaService.Encrypt(
+            keys.PublicKey, plainText);
+
+        // Act
+        string decryptedText = _rsaService.Decrypt(
+            keys.PrivateKey, cipherText);
+
+        // Assert
+        Assert.Equal(plainText, decryptedText);
+    }
 }
